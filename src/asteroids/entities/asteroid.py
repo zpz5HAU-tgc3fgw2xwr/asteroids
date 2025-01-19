@@ -1,6 +1,6 @@
 import pygame
 import random
-from constants import ASTEROID_MIN_RADIUS
+from asteroids.constants import ASTEROID_MIN_RADIUS
 
 class Asteroid(pygame.sprite.Sprite):
 	containers = None

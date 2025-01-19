@@ -1,64 +1,81 @@
 # 🚀 Asteroids Game (Python)
 
-This repository contains the **Asteroids Game** project, developed as part of the [Boot.dev course](https://www.boot.dev/courses/build-asteroids-python). This project focuses on creating a command-line game that simulates the classic arcade experience of navigating and shooting asteroids.
+This repository contains the **Asteroids Game** project, developed as part of the [Boot.dev course](https://www.boot.dev/courses/build-asteroids-python). This project recreates the classic arcade experience of navigating a spaceship, shooting asteroids, and avoiding collisions.
+
+---
 
 ## 🌟 Features
 
-- **Player Movement**: Navigate a spaceship across a 2D grid.
+- **Player Movement**: Control the spaceship with fluid movement mechanics.
 - **Shooting Mechanics**: Destroy asteroids with precise shooting.
-- **Random Asteroid Generation**: Infinite gameplay with dynamically generated obstacles.
-- **Scoring System**: Track and display player performance.
-- **Game Over Conditions**: Realistic collision handling and restart options.
+- **Asteroid Dynamics**: Randomly generated and splitable asteroids for endless gameplay.
+- **Scoring System**: Keep track of your progress with a live score counter.
+- **Game Over**: Immersive game over screen with the final score and objects frozen in their last positions.
+
+---
 
 ## 🛠️ Technologies Used
 
 - **Python**: Core programming language.
-- **Game Loops**: Implemented efficient and smooth gameplay loops.
-- **Random Module**: Used for asteroid generation.
-- **CLI Interactivity**: Intuitive command-line interface for gameplay.
-- **Unit Testing**: Verifies game mechanics and logic.
+- **Pygame**: Library used for game development.
+- **Random Module**: For asteroid generation and movement dynamics.
+- **Unit Testing**: Ensures reliability and correctness of gameplay mechanics.
+
+---
 
 ## 📚 What I Learned
 
-- Designing game loops and managing game states.
-- Implementing collision detection for moving objects.
-- Using Python’s random module for dynamic gameplay elements.
-- Writing unit tests to validate game logic and mechanics.
+- **Game Development Fundamentals**: Built a structured game loop and managed game states.
+- **Entity Interactions**: Implemented collision detection and event-based interactions.
+- **Code Modularity**: Organized the code into reusable modules and utilities.
+- **Testing Practices**: Wrote unit tests for game entities and mechanics.
+
+---
 
 ## 🧪 Testing
 
-Unit tests were written to ensure the reliability of:
+This project includes comprehensive unit tests to ensure the reliability of the following:
 
-- Player movement and boundary checks.
-- Accurate collision detection with asteroids.
-- Correct scoring updates.
-- Asteroid generation and removal.
+- **Player Mechanics**: Movement, shooting, and interactions.
+- **Asteroid Behavior**: Random spawning, splitting, and collisions.
+- **Game Logic**: Scoring updates and game over conditions.
 
-Run tests with:
+To run tests, simply execute:
+
 ```bash
 pytest
 ```
 
+---
+
 ## 📂 Project Structure
 
 ```
-├── game/             # Core game logic and mechanics
-├── tests/            # Unit tests for game functionality
-├── assets/           # Game-related assets (if applicable)
-└── README.md         # Project documentation
+src/
+├── __main__.py        # Entry point for the game
+├── asteroids/         # Core game modules
+│   ├── entities/      # Game entities like player, asteroid, and shots
+│   ├── utils/         # Helper utilities (e.g., rendering functions)
+│   ├── constants.py   # Shared game constants
+tests/                 # Unit tests for validating game functionality
 ```
+
+---
 
 ## 🌌 Why This Project?
 
-The Asteroids Game project allowed me to explore:
+The Asteroids Game was an opportunity to explore:
 
-- Fundamental game development principles.
-- Python’s utility in creating interactive applications.
-- Problem-solving through implementing classic game mechanics.
+- The fundamentals of game development.
+- Python’s capabilities for creating interactive 2D applications.
+- Problem-solving through implementing classic arcade mechanics.
+
+---
 
 ## 🔗 Related Resources
 
 - [Boot.dev Course](https://www.boot.dev/courses/build-asteroids-python)
+- [Pygame Documentation](https://www.pygame.org/docs/)
 - [Official Python Documentation](https://docs.python.org/3/)
 
 ---
